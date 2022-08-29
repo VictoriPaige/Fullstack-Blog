@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-blog",
+  "version": "1.0.0",
+  "description": "MERN app to learn fullstack development",
+  "main": "server.js",
+  "scripts": {
+    "server": nodemon""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoriPaige/Fullstack-Blog.git"
+  },
+  "keywords": [],
+  "author": "Victoria Atkinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictoriPaige/Fullstack-Blog/issues"
+  },
+  "homepage": "https://github.com/VictoriPaige/Fullstack-Blog#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
