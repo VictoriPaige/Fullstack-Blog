@@ -4,7 +4,8 @@ import articleContent from "./article-content";
 import Articles from '../components/articles';
 import NotFound from './notfound';
 import { useState, useEffect } from 'react';
-import CommentsList from '../components/commentsList'
+import CommentsList from '../components/commentsList';
+import AddCommentForm from '../components/addcommentform';
 
 const Article = () =>{
     const {name} = useParams();
@@ -28,6 +29,7 @@ return(
 <h1 className='sm:text-4xl text-2xl font-bold my-6 text-gray-900'> {article.title}</h1> {/* go back and slugify it */}
 {article.content.map((paragraph, index)=>(<p className='mx-auto leading-relaxed text-base mb-4' key={index}>{paragraph}</p>))}
 <CommentsList comments={articleInfo.comments}/>
+<AddCommentForm articleName={name} setArticleInfo={setArticleInfo}/>
 <h1 className='sm:text-2xl text-xl font-bold my-4 text-gray-900'>
     Other Articles
 </h1>
