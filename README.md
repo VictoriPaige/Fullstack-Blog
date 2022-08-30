@@ -31,7 +31,7 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 
 - Search content available 
 - Users ability to up or down vote on preexisting comments
-- Timestamp comments and articles submittes
+- Timestamp comments and articles submitted
 - Creating a signup option to get alerted on newly puublished articles
 
 
