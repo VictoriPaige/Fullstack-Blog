@@ -7,7 +7,7 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
   - CRUD operations 
 
 
-### 💻 MVP:
+### 📝 MVP:
 
 - Blog functionality:
   - Includes a navigation bar
