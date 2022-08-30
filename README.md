@@ -58,11 +58,12 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 ![Article Page](https://user-images.githubusercontent.com/105768093/187502704-42ab92c0-76e6-4c52-a228-d735cccb8a2b.png)
 
 
-
-
-
 ## 📊 Component Hierarchy: 
-
+```Container
+  |__ Clients 
+    |__ Components
+    |__ Pages
+```
 
 ## 📦 Dependencies:
 
