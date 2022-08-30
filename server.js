@@ -66,22 +66,24 @@ res.status(200).json(updateArticleInfo);
 // res.status(200).json(removeComment);
 
 
-app.put('/api/articles/:name/comments', (req,res)=>{
-    const {username, text} = req.body;
-    const articleName = req.params.name;
-    const articleComment=req.params.comments;
-   withDB(async(db)=>{
-const articleInfo = await db.collection('articles').findOne({name:articleName});
-await db.collection('articles').updateOne({comment:articleComment},{
-    $unset:{
-    comments:articleInfo.comments.remove({username,text}),
-    },
-});
-const removeComment= await db.collection('articles').findOne({comment:articleComment});
-res.status(200).json(removeComment);
+// app.put('/api/articles/:name/comments', (req,res)=>{
+//     const {username, text} = req.body;
+//     const articleName = req.params.name;
+//     const articleComment=req.params.comments;
+//    withDB(async(db)=>{
+// const articleInfo = await db.collection('articles').findOne({name:articleName});
+// await db.collection('articles').updateOne({comment:articleComment},{
+//     $unset:{
+//     comments:articleInfo.comments.remove({username,text}),
+//     },
+// });
+// const removeComment= await db.collection('articles').findOne({comment:articleComment});
+// db.collection.replaceOne({articleComment}, replacement, options)
 
-}, res);
-});
+// res.status(200).json(removeComment);
+
+// }, res);
+// });
 
 // TEST ROUTE:
 // app.get('/', (req,res)=> res.send('Hello, World!'));
