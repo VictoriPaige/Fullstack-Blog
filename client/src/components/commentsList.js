@@ -7,9 +7,10 @@ const CommentsList = ({comments})=>{
     Comments:
 </h3>
 {comments.map((comment, index)=>(
-    <div key={index}>
+    <div className="shadow rounded px-8 pt-6 pb-8 mb-4" key={index}>
         <h4 className="text-xl font-bold">{comment.username}</h4>
-        <p className="mt-1 mb-4">{comment.text}</p>
+        <p className="mt-1 mb-4">{comment.text}</p> 
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={(e)=>console.log(e)}>Delete</button>
     </div>
 ))}
 </>

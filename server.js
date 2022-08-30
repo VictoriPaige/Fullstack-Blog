@@ -53,8 +53,35 @@ await db.collection('articles').updateOne({name:articleName},{
 });
 const updateArticleInfo= await db.collection('articles').findOne({name: articleName});
 res.status(200).json(updateArticleInfo);
-   }, res);
+}, res);
 });
+// // ~~~~~~~ TESTER REMOVE COMMENT CODE ~~~~~~~~~ using .remove()
+
+// const removeComment = await db.collection('articles').findOne({name:articleName});
+// await db.collection('articles').updateOne({name:articleName},{
+//     $set:{
+//     comments:articleInfo.comments.remove({username,text}),
+//     },
+// });
+// res.status(200).json(removeComment);
+
+
+// app.post('/api/articles/:name/remove-comments', (req,res)=>{
+//     const {username, text} = req.body;
+//     const articleName = req.params.name;
+//     const articleComment=req.params.comments.index;
+//    withDB(async(db)=>{
+// const articleInfo = await db.collection('articles').findOne({name:articleName});
+// await db.collection('articles').updateOne({comment:articleComment},{
+//     $unset:{
+//     comments:articleInfo.comments.remove({username,text}),
+//     },
+// });
+// const removeComment= await db.collection('articles').findOne({comment:articleComment});
+// res.status(200).json(removeComment);
+
+// }, res);
+// });
 
 // TEST ROUTE:
 // app.get('/', (req,res)=> res.send('Hello, World!'));
