@@ -54,7 +54,9 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 
 
 ### Desktop Version: 
-![Home Page](https://user-images.githubusercontent.com/105768093/187501245-306d3eba-7693-4a6b-bca1-3d7b7950c0da.png)
+![Home Page](https://user-images.githubusercontent.com/105768093/187502666-e0af5053-e2ea-4d4e-9c1a-26ff1f49f7fc.png)
+![Article Page](https://user-images.githubusercontent.com/105768093/187502704-42ab92c0-76e6-4c52-a228-d735cccb8a2b.png)
+
 
 
 
