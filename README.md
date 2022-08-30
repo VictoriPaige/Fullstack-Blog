@@ -49,11 +49,11 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 
 ## ➿ Wireframes:
 
-### Mobile Version:
+### 📱 Mobile Version:
 ![V-log Read ME](https://user-images.githubusercontent.com/105768093/187495986-8260d777-5d80-403c-a1b7-2e9077229004.png)
 
 
-### Desktop Version: 
+### 🖥️ Desktop Version: 
 ![Home Page](https://user-images.githubusercontent.com/105768093/187502666-e0af5053-e2ea-4d4e-9c1a-26ff1f49f7fc.png)
 ![Article Page](https://user-images.githubusercontent.com/105768093/187502704-42ab92c0-76e6-4c52-a228-d735cccb8a2b.png)
 
