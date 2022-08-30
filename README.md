@@ -48,6 +48,7 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 
 
 ## ➿ Wireframes:
+![V-log Read ME](https://user-images.githubusercontent.com/105768093/187495986-8260d777-5d80-403c-a1b7-2e9077229004.png)
 
 
 ## 📊 Component Hierarchy: 
