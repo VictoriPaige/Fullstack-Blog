@@ -37,6 +37,15 @@ V-log is a fullstack interactive CRUD application. This app was designed to disp
 
 ## 📍API Endpoint Documentations:
 
+- ```GET /api/articles/:name ``` 
+
+  - Retrieve article information
+
+
+- ```POST /api/articles/:name/add-comments```
+
+  - Enable user to update article with comment
+
 
 ## ➿ Wireframes:
 
