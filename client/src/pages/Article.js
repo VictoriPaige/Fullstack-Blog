@@ -16,24 +16,24 @@ const Article = () =>{
         const fetchData= async () => {
             const result = await fetch(`/api/articles/${name}`);
             const body = await result.json();
-            // console.log(body);
+            console.log(body);
             setArticleInfo(body);
         }
        fetchData();
     }, [name]);
 
     function removeComment(e,index){
-        console.log(e.target.id)
+       // console.log(e.target.id)
         setArticleInfo((prev)=>{ 
             console.log(prev)
-            prev.comments.splice( e.target.id, 1 );
-            return prev;
+            prev.comments.splice( e.target.id, 1 )
+            return prev
             // prev.comments.filter(comment=> e.target.id == index)
 
         })
     }
     if(!article)return <NotFound/>;
-    const otherArticles = articleContent.filter(article=> article.name != name)
+    const otherArticles = articleContent.filter(article=> article.name !== name)
 return(
     <>
 <h1 className='sm:text-4xl text-2xl font-bold my-6 text-gray-900'> {article.title}</h1> 

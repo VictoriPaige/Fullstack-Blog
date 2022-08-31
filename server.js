@@ -2,6 +2,7 @@ const express = require("express")
 const app = express();
 const {MongoClient} = require('mongodb');
 const PORT = process.env.PORT || 8000;
+//const methodOverride = require('method-override');
 
 
 // const articlesInfo= {
@@ -17,6 +18,7 @@ const PORT = process.env.PORT || 8000;
 // }
 
 app.use(express.json({extended: false}));
+//app.use(methodOverride('_method'));
 
 const withDB = async(operations, res) => {
     try{
