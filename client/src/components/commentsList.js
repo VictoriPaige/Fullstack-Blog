@@ -17,7 +17,7 @@ const CommentsList = ({comments, removeComment})=>{
         <h4 className="text-xl font-bold">{comment.username}</h4>
         <p className="mt-1 mb-4">{comment.text}</p> 
         <button id={index} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-        onClick={(e)=>removeComment(e,index)}
+        onClick={()=>removeComment(index)}
         >Delete</button>
         
     </div>

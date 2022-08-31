@@ -22,11 +22,11 @@ const Article = () =>{
        fetchData();
     }, [name]);
 
-    function removeComment(e,index){
+    function removeComment(index){
        // console.log(e.target.id)
         setArticleInfo((prev)=>{ 
             console.log(prev)
-            prev.comments.splice( e.target.id, 1 )
+            prev.comments.splice( index, 1 )
             return prev
             // prev.comments.filter(comment=> e.target.id == index)
 
